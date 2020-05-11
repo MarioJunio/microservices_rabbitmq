@@ -6,10 +6,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 @EnableRabbit
-public class EcommerceMailServiceApplication {
+public class EcommerceOrderApiApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(EcommerceMailServiceApplication.class, args);
+		SpringApplication.run(EcommerceOrderApiApplication.class, args);
 	}
 
 }

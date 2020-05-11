@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 public class ClientesConsumer {
 	Logger logger = LoggerFactory.getLogger(getClass());
 	
-	@RabbitListener(queues = { "${queue.cliente.mail.name}" })
+	@RabbitListener( queues = { "${queue.welcome.mail.name}" })
 	public void receiver(@Payload String clienteUuid) {
 		logger.info(String.format("Buscando cliente: %s...", clienteUuid));
 		logger.info("Enviando email...");
